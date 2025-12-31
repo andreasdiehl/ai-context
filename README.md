@@ -1,6 +1,6 @@
-# AI Context Hub 🧠
+# AI Context Hub
 
-A centralized, versioned repository for official documentation, designed to provide "Source of Truth" context for AI coding assistants (like Gemini/Antigravity).
+A centralized, versioned repository for official documentation, designed to provide "Source of Truth" context for AI coding assistants like Antigravity.
 
 ## 🚀 Usage (For Developers)
 
