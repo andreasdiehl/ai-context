@@ -11,6 +11,10 @@ GHOST_REPO="https://github.com/TryGhost/docs"
 GHOST_BRANCH="main" 
 GHOST_DEST="ghost-v6"
 
+ALPINE_REPO="https://github.com/alpinejs/alpine"
+ALPINE_BRANCH="main"
+ALPINE_DEST="alpine-v3"
+
 # Function: Sync generic repo
 sync_repo() {
     NAME=$1
@@ -65,8 +69,7 @@ sync_repo() {
 sync_repo "Tailwind CSS v4" "$TAILWIND_REPO" "$TAILWIND_BRANCH" "$TAILWIND_DEST" "src/pages/docs"
 
 # 2. Ghost Docs
-# The official repo seems to be a Gatsby/Remix site. 
-# Usually docs are in /docs or similar.
-# Let's try to find where the actual markdown lives.
-# For now, we sync the root, but exclude node_modules.
 sync_repo "Ghost Docs" "$GHOST_REPO" "$GHOST_BRANCH" "$GHOST_DEST" ""
+
+# 3. Alpine.js
+sync_repo "Alpine.js" "$ALPINE_REPO" "$ALPINE_BRANCH" "$ALPINE_DEST" "packages/docs/src"

@@ -1,6 +1,19 @@
-# AI Context Hub
+# AI Context Hub 🧠
 
-A centralized, versioned repository for official documentation, designed to provide "Source of Truth" context for AI coding assistants like Antigravity.
+A centralized, versioned repository for official documentation, designed to provide "Source of Truth" context for AI coding assistants (like Gemini/Antigravity).
+
+## ❓ Why? (The Problem)
+
+AI Agents often struggle with:
+
+- **Outdated Knowledge:** Training data cuts off (e.g., knows Tailwind v3, but not v4).
+- **Context Mixing:** Confusing syntax between library versions.
+- **Hallucinations:** Inventing APIs that don't exist.
+
+**The Solution:**
+By feeding the _actual, official documentation source files_ directly into the AI's context window, we ensure zero-latency access to the ground truth. This "Hub" lets you download it once and link it everywhere, keeping your projects lean and your AI smart.
+
+---
 
 ## 🚀 Usage (For Developers)
 
@@ -23,7 +36,8 @@ In your project root, create a `ai-context.json` file to define which documentat
 {
   "sources": {
     "tailwind": "tailwind-v4",
-    "ghost": "ghost-v6"
+    "ghost": "ghost-v6",
+    "alpine": "alpine-v3"
   },
   "hubPath": "~/dev/ai-context"
 }
@@ -54,6 +68,9 @@ You can manually create symbolic links from the Hub to your project's `.context`
 
     # Example: Link Ghost v6
     ln -s ~/dev/ai-context/ghost-v6 .context/ghost
+
+    # Example: Link Alpine v3
+    ln -s ~/dev/ai-context/alpine-v3 .context/alpine
     ```
 
 ---
