@@ -75,4 +75,4 @@ sync_repo "Tailwind CSS v4" "$TAILWIND_REPO" "$TAILWIND_BRANCH" "$TAILWIND_DEST"
 sync_repo "Ghost Docs" "$GHOST_REPO" "$GHOST_BRANCH" "$GHOST_DEST" ""
 
 # 3. Alpine.js
-sync_repo "Alpine.js" "$ALPINE_REPO" "$ALPINE_BRANCH" "$ALPINE_DEST" "packages/docs/src"
+sync_repo "Alpine.js" "$ALPINE_REPO" "$ALPINE_BRANCH" "$ALPINE_DEST" "packages/docs/src/en"
