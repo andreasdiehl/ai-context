@@ -12,7 +12,7 @@ Clone this repository to a standard location on your machine:
 
 ```bash
 mkdir -p ~/dev
-git clone https://github.com/YOUR_ORG/ai-context.git ~/dev/ai-context
+git clone https://github.com/andreasdiehl/ai-context.git ~/dev/ai-context
 ```
 
 ### 2. Configure Your Project
@@ -31,10 +31,30 @@ In your project root, create a `ai-context.json` file to define which documentat
 
 ### 3. Sync
 
-Add a sync script (e.g., `sync-context.sh`) to your project that reads this config and creates symlinks in `.context/`.
+You can sync the context to your project either automatically or manually.
+
+#### Option A: Automatic Script (Recommended)
+
+Add a user script (e.g., `sync-context.sh`) to your project that reads `ai-context.json` and creates the links.
 _The AI agent can generate this script for you._
 
-When you run the sync script, it links the documentation from `~/dev/ai-context` directly into your project.
+#### Option B: Manual Linking
+
+You can manually create symbolic links from the Hub to your project's `.context` folder.
+
+1.  Create the context folder:
+    ```bash
+    mkdir -p .context
+    ```
+2.  Link the libraries you need (check `~/dev/ai-context` for available options):
+
+    ```bash
+    # Example: Link Tailwind v4
+    ln -s ~/dev/ai-context/tailwind-v4 .context/tailwind
+
+    # Example: Link Ghost v6
+    ln -s ~/dev/ai-context/ghost-v6 .context/ghost
+    ```
 
 ---
 
