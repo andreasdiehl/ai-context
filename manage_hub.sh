@@ -2,6 +2,9 @@
 
 # management_hub.sh - Updates the Global AI Context Hub
 
+# Ensure we are in the script's directory (The Hub)
+cd "$(dirname "$0")" || exit
+
 # Configuration
 TAILWIND_REPO="https://github.com/tailwindlabs/tailwindcss.com"
 TAILWIND_BRANCH="v4-beta-docs"
