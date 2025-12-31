@@ -64,7 +64,7 @@ How to keep documentation up-to-date or add new libraries.
 
 ### Updating Existing Docs
 
-1.  Open this repository locally (`cd ~/dev/ai-context`).
+1.  Open this repository locally
 2.  Run the management script:
     ```bash
     ./manage_hub.sh
