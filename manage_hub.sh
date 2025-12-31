@@ -9,7 +9,7 @@ TAILWIND_DEST="tailwind-v4"
 
 GHOST_REPO="https://github.com/TryGhost/docs"
 GHOST_BRANCH="main" 
-GHOST_DEST="ghost-v5"
+GHOST_DEST="ghost-v6"
 
 # Function: Sync generic repo
 sync_repo() {
